@@ -1,0 +1,5 @@
+{
+  "name": "MovieStream Pro",
+  "description": "An enhanced and visually stunning movie and TV show streaming web application, built with React and Tailwind CSS. Discover, search, and watch the latest content with a sleek, modern interface.",
+  "requestFramePermissions": []
+}
