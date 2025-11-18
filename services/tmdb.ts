@@ -1,4 +1,3 @@
-
 import { Movie, MovieDetails, TVShow, TVShowDetails, TVSeasonDetails } from '../types';
 
 const API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c'; // Publicly available TMDB API key
@@ -70,4 +69,4 @@ export const getTVSeasonDetails = (tvId: number, seasonNumber: number): Promise<
 };
 
 export const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/';
-export const EMBED_BASE_URL = 'https://vidsrc.to/embed'; // Using a more reliable embed source
+export const EMBED_BASE_URL = 'https://cinemaos.tech/player'; // Using cinemaos.tech embed source

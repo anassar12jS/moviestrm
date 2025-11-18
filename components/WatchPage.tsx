@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
 import { WatchItem, MovieDetails, TVShowDetails, TVSeasonDetails } from '../types';
 import * as tmdbService from '../services/tmdb';
@@ -57,8 +56,8 @@ const WatchPage: React.FC<WatchPageProps> = ({ item, onClose }) => {
     const embedUrl = useMemo(() => {
         if (!details) return '';
         return item.isTV
-            ? `${tmdbService.EMBED_BASE_URL}/tv/${item.id}/${selectedSeason}/${selectedEpisode}`
-            : `${tmdbService.EMBED_BASE_URL}/movie/${item.id}`;
+            ? `${tmdbService.EMBED_BASE_URL}/${item.id}/${selectedSeason}/${selectedEpisode}`
+            : `${tmdbService.EMBED_BASE_URL}/${item.id}`;
     }, [item, details, selectedSeason, selectedEpisode]);
 
     const tvDetails = details as TVShowDetails;
